@@ -23,7 +23,7 @@ app.post('/validate', async (req, res) => {
             params: {
                 sub_key: `eq.${sub_key}`,
                 user_id: `eq.${user_id}`,   // <-- Aquí también usa user_id
-                valid: 'eq.true'
+                valid: 'is.true'
             },
             headers: {
                 apikey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJzY2J1bnphZmF2YnFvcHh2d3BxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc0MjA4MjYsImV4cCI6MjA2Mjk5NjgyNn0.zgiSaPIWP8JL_013-Zl8H_0mR_7uBSH3JmCOakFXm4o',
